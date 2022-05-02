@@ -1,0 +1,131 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Made = Instance.new("TextLabel")
+local SpeedHack = Instance.new("TextButton")
+local HackBL = Instance.new("TextButton")
+local HackPSX = Instance.new("TextButton")
+local PhuTro = Instance.new("TextLabel")
+local HackAsenal = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local HackGame = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.545454562, 0, 0.530508459, 0)
+Main.Size = UDim2.new(0, 430, 0, 233)
+Main.Active = true
+Main.Draggable = true
+
+Made.Name = "Made "
+Made.Parent = Main
+Made.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
+Made.Position = UDim2.new(0.393332064, 0, 0.477593243, 0)
+Made.Size = UDim2.new(0, 90, 0, 34)
+Made.Font = Enum.Font.SourceSans
+Made.Text = "Made By Kaz"
+Made.TextColor3 = Color3.fromRGB(0, 0, 0)
+Made.TextSize = 14.000
+
+SpeedHack.Name = "Speed Hack"
+SpeedHack.Parent = Main
+SpeedHack.BackgroundColor3 = Color3.fromRGB(223, 255, 14)
+SpeedHack.Position = UDim2.new(0.0325581394, 0, 0.175965682, 0)
+SpeedHack.Size = UDim2.new(0, 119, 0, 51)
+SpeedHack.Font = Enum.Font.SourceSans
+SpeedHack.Text = "Speed"
+SpeedHack.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedHack.TextSize = 14.000
+SpeedHack.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+HackBL.Name = "Hack BL"
+HackBL.Parent = Main
+HackBL.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+HackBL.Position = UDim2.new(0.679069817, 0, 0.175965652, 0)
+HackBL.Size = UDim2.new(0, 130, 0, 49)
+HackBL.Font = Enum.Font.SourceSans
+HackBL.Text = "Hack Blox Fruit"
+HackBL.TextColor3 = Color3.fromRGB(0, 0, 0)
+HackBL.TextSize = 14.000
+HackBL.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+
+HackPSX.Name = "Hack PSX"
+HackPSX.Parent = Main
+HackPSX.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+HackPSX.Position = UDim2.new(0.679069817, 0, 0.429184526, 0)
+HackPSX.Size = UDim2.new(0, 132, 0, 54)
+HackPSX.Font = Enum.Font.SourceSans
+HackPSX.Text = "Hack Pet Sim x"
+HackPSX.TextColor3 = Color3.fromRGB(0, 0, 0)
+HackPSX.TextSize = 14.000
+HackPSX.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet"https://www.scriptblox.com/raw/SAZA-HUB_496")()
+end)
+
+PhuTro.Name = "Phu Tro"
+PhuTro.Parent = Main
+PhuTro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PhuTro.Position = UDim2.new(0.0465116277, 0, 0.0429184549, 0)
+PhuTro.Size = UDim2.new(0, 106, 0, 23)
+PhuTro.Font = Enum.Font.SourceSans
+PhuTro.Text = "Helper"
+PhuTro.TextColor3 = Color3.fromRGB(0, 0, 0)
+PhuTro.TextSize = 14.000
+
+HackAsenal.Name = "Hack Asenal"
+HackAsenal.Parent = Main
+HackAsenal.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+HackAsenal.Position = UDim2.new(0.679069817, 0, 0.7081545, 0)
+HackAsenal.Size = UDim2.new(0, 132, 0, 50)
+HackAsenal.Font = Enum.Font.SourceSans
+HackAsenal.Text = "Hack Asenal"
+HackAsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+HackAsenal.TextSize = 14.000
+HackAsenal.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = Main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(170, 255, 0)
+InfiniteYield.Position = UDim2.new(0.0325581394, 0, 0.446351945, 0)
+InfiniteYield.Size = UDim2.new(0, 119, 0, 50)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 14.000
+InfiniteYield.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+end)
+ESP.Name = "ESP"
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+ESP.Position = UDim2.new(0.0325581431, 0, 0.7081545, 0)
+ESP.Size = UDim2.new(0, 119, 0, 47)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+ESP.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD%20ESP.txt"))()
+end)
+
+HackGame.Name = "Hack Game"
+HackGame.Parent = Main
+HackGame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HackGame.Position = UDim2.new(0.704651177, 0, 0.0343347639, 0)
+HackGame.Size = UDim2.new(0, 107, 0, 25)
+HackGame.Font = Enum.Font.SourceSans
+HackGame.Text = "Hack GAME"
+HackGame.TextColor3 = Color3.fromRGB(0, 0, 0)
+HackGame.TextSize = 14.000
